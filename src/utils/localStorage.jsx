@@ -1,4 +1,3 @@
-
 const employees = [
     {
         "id": 1,
@@ -19,8 +18,8 @@ const employees = [
                 "failed": false,
                 "taskTitle": "Update website",
                 "taskDescription": "Revamp the homepage design",
-                "taskDate": "2024-10-12",
-                "category": "Design" 
+                "taskDate": "12 Oct 2024",
+                "category": "Design"
             },
             {
                 "active": false,
@@ -29,7 +28,7 @@ const employees = [
                 "failed": false,
                 "taskTitle": "Client meeting",
                 "taskDescription": "Discuss project requirements",
-                "taskDate": "2024-10-10",
+                "taskDate": "10 Oct 2024",
                 "category": "Meeting"
             },
             {
@@ -39,7 +38,7 @@ const employees = [
                 "failed": false,
                 "taskTitle": "Fix bugs",
                 "taskDescription": "Resolve bugs reported in issue tracker",
-                "taskDate": "2024-10-14",
+                "taskDate": "14 Oct 2024",
                 "category": "Development"
             }
         ]
@@ -47,7 +46,7 @@ const employees = [
     {
         "id": 2,
         "firstName": "Sneha",
-        "email": "employee2@example.com",
+        "email": "e2@e.com",
         "password": "123",
         "taskCounts": {
             "active": 1,
@@ -63,7 +62,7 @@ const employees = [
                 "failed": false,
                 "taskTitle": "Database optimization",
                 "taskDescription": "Optimize queries for better performance",
-                "taskDate": "2024-10-11",
+                "taskDate": "11 Oct 2024",
                 "category": "Database"
             },
             {
@@ -73,7 +72,7 @@ const employees = [
                 "failed": false,
                 "taskTitle": "Design new feature",
                 "taskDescription": "Create mockups for the new feature",
-                "taskDate": "2024-10-09",
+                "taskDate": "09 Oct 2024",
                 "category": "Design"
             }
         ]
@@ -81,7 +80,7 @@ const employees = [
     {
         "id": 3,
         "firstName": "Ravi",
-        "email": "employee3@example.com",
+        "email": "e3@e.com",
         "password": "123",
         "taskCounts": {
             "active": 2,
@@ -97,7 +96,7 @@ const employees = [
                 "failed": false,
                 "taskTitle": "Prepare presentation",
                 "taskDescription": "Prepare slides for upcoming client presentation",
-                "taskDate": "2024-10-13",
+                "taskDate": "13 Oct 2024",
                 "category": "Presentation"
             },
             {
@@ -107,7 +106,7 @@ const employees = [
                 "failed": false,
                 "taskTitle": "Code review",
                 "taskDescription": "Review the codebase for optimization",
-                "taskDate": "2024-10-12",
+                "taskDate": "12 Oct 2024",
                 "category": "Development"
             },
             {
@@ -117,7 +116,7 @@ const employees = [
                 "failed": false,
                 "taskTitle": "Testing",
                 "taskDescription": "Test the latest build for bugs",
-                "taskDate": "2024-10-08",
+                "taskDate": "08 Oct 2024",
                 "category": "QA"
             }
         ]
@@ -125,7 +124,7 @@ const employees = [
     {
         "id": 4,
         "firstName": "Priya",
-        "email": "employee4@example.com",
+        "email": "e3@e.com",
         "password": "123",
         "taskCounts": {
             "active": 2,
@@ -141,7 +140,7 @@ const employees = [
                 "failed": false,
                 "taskTitle": "Write documentation",
                 "taskDescription": "Update the project documentation",
-                "taskDate": "2024-10-13",
+                "taskDate": "13 Oct 2024",
                 "category": "Documentation"
             },
             {
@@ -151,7 +150,7 @@ const employees = [
                 "failed": false,
                 "taskTitle": "Set up CI/CD",
                 "taskDescription": "Implement continuous integration pipeline",
-                "taskDate": "2024-10-11",
+                "taskDate": "11 Oct 2024",
                 "category": "DevOps"
             }
         ]
@@ -159,7 +158,7 @@ const employees = [
     {
         "id": 5,
         "firstName": "Karan",
-        "email": "employee5@example.com",
+        "email": "e4@e.com",
         "password": "123",
         "taskCounts": {
             "active": 2,
@@ -175,7 +174,7 @@ const employees = [
                 "failed": false,
                 "taskTitle": "UI redesign",
                 "taskDescription": "Redesign the user interface for better UX",
-                "taskDate": "2024-10-14",
+                "taskDate": "14 Oct 2024",
                 "category": "Design"
             },
             {
@@ -185,7 +184,7 @@ const employees = [
                 "failed": false,
                 "taskTitle": "Deploy new build",
                 "taskDescription": "Deploy the latest build to production",
-                "taskDate": "2024-10-09",
+                "taskDate": "09 Oct 2024",
                 "category": "DevOps"
             },
             {
@@ -195,7 +194,7 @@ const employees = [
                 "failed": false,
                 "taskTitle": "Client feedback",
                 "taskDescription": "Gather feedback from clients after product launch",
-                "taskDate": "2024-10-12",
+                "taskDate": "12 Oct 2024",
                 "category": "Support"
             }
         ]
@@ -209,13 +208,13 @@ const admin = [{
     "password": "123"
 }];
 
-export const setLocalStorage = ()=>{
-    localStorage.setItem('employees',JSON.stringify(employees))
-    localStorage.setItem('admin',JSON.stringify(admin))
+export const setLocalStorage = () => {
+    localStorage.setItem('employees', JSON.stringify(employees))
+    localStorage.setItem('admin', JSON.stringify(admin))
 }
-export const getLocalStorage = ()=>{
+
+export const getLocalStorage = () => {
     const employees = JSON.parse(localStorage.getItem('employees'))
     const admin = JSON.parse(localStorage.getItem('admin'))
-
-    return {employees,admin}
+    return {employees, admin}
 }
